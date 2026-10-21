@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dreamers Den ESL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #eaf7ff;
+      padding: 30px;
+    }
+    button {
+      font-size: 24px;
+      padding: 18px;
+      margin: 10px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Dreamers Den!</h1>
+  <h2>ESL Learning Adventure</h2>
+  <p>Let's practice the M sound!</p>
+  <div style="font-size:80px">🐒</div>
+  <h2>What is this?</h2>
+  <button onclick="check(true)">Monkey</button>
+  <button onclick="check(false)">Moon</button>
+  <button onclick="check(false)">Milk</button>
+  <h2 id="result"></h2>
+  <script>
+    function check(correct) {
+      document.getElementById("result").textContent =
+        correct ? "Great job!" : "Try again!";
+    }
+  </script>
+</body>
+</html>
